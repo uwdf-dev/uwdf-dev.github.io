@@ -16,15 +16,20 @@
     }
     img {
 
-      max-width: 50%;
+      max-width: 100%;
       height: auto;
       border-radius: 6px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       transition: transform 0.3s;
     }
-img:hover {
+    img:hover {
       transform: scale(1.05);
     }
+    @media (min-width: 768px) {
+      img {
+        max-width: 50%;
+  }
+}
   </style>
 		  </head>
 		<body>
@@ -37,7 +42,7 @@ img:hover {
             <!-- Logo / Title on the left -->
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 ext-decoration-none">
                 <!-- Optional logo -->
-                <!-- <img src="img/favicon-light.ico" width="40" height="40" class="me-2"> -->
+                <img src="../img/favicon-dark.ico" width="40" height="40" class="me-2">
                 <h3 class="mb-0 fw-bold">U.W.D.F.</h3>
             </a>
 
@@ -54,7 +59,7 @@ img:hover {
     <h4>More About Us</h4>
 
     <div class="border rounded">
-      <div class="p-3 bg-light" data-bs-toggle="collapse" data-bs-target="#section1"><h5>Our Story</h5></div>
+      <div class="p-3 bg-light" role="button" data-bs-toggle="collapse" data-bs-target="#section1"><h5>Our Story</h5></div>
       <div class="collapse" id="section1">
         <div class="p-3 border-top"><p>UWDF traces its earliest lineage to a figure active in the mid-seventeenth century, during the consolidation period of the Qing dynasty in present-day Guangzhou, near Hong Kong. Wong Shifu, meaning Master Wong, was a textile broker operating along emerging commercial corridors that granted agrarian districts with the ability to sell professionally made food. His practice showed pragmatic willingness to integrate artisanal knowledge with evolving market demands, being the first to adapt to emerging technology. Over time, his dynastic company became a leading teacher of farm-to-table mechanics in China. </p>
 		    <p>
@@ -67,7 +72,7 @@ img:hover {
 		      <img  src="../img/workers/17UntitledFinal.jpg">
 		    </p>
 		    <p>The leaders of the organization re-organized it into a more modern form that one would see today. Their view of foreign trade, however, conflicted with the Emperor's, and the company sided with the British in the Opium Wars. The resulting damage in the aftermath meant they were all done away with, except for one: Wong Zhi Mo. He shrunk the company, ushering in the modern era.</p>
-		    <p>
+		    </p>
 		    <p>Rebuilding the company was difficult with strictly Communist China and the World Wars. By siding with the Japanese, the company was again nearly destroyed. Wong Peng, the great-great grandson of Wong Zhi Mo, finally, after the hyper-restraining Communism of China was reformed, could build back.</p>
 		    <p>
 		      <img  src="../img/workers/8final.jpg">
@@ -80,7 +85,7 @@ img:hover {
 
       </div>
 
-      <div class="p-3 bg-light" data-bs-toggle="collapse" data-bs-target="#section2"><h5>Our Executives</h5></div>
+      <div role="button" class="p-3 bg-light" data-bs-toggle="collapse" data-bs-target="#section2"><h5>Our Executives</h5></div>
       <div class="collapse" id="section2">
         <div class="p-3 border-top"><div class="container">
 	    <h2 class="mb-4 text-center">Executive Employees</h2>
@@ -174,10 +179,10 @@ img:hover {
 
       <div class="col text-center">
         <div >
-          <img src="../img/execs/schoi.jpg">
+          <img src="../img/execs/zkasim.jpg">
           <div class="img-caption mt-3">
-            <h5 class="fw-bold">Sumner Choi - President of the Strategic Investment Department</h5>
-            <p>Sumner was recruited by our brothas to be head of our monetary development program, in which we reinvest much of our profits.</p>
+            <h5 class="fw-bold">Zeesh - President of the Strategic Investment Department</h5>
+            <p>Zeesh was recruited by our brothas to be head of our monetary development program, into which we re-invest much of our profits.</p>
           </div>
         </div>
       </div>
@@ -194,6 +199,40 @@ img:hover {
       </div>
     </div>
   </div>
+
+<div role="button" class="p-3 bg-light" data-bs-toggle="collapse" data-bs-target="#section3"><h5>Our Managers</h5></div>
+<div class="collapse" id="section3">
+<div class="p-3 border-top"><div class="container">
+<h2 class="mb-4 text-center">Regional Managers</h2>
+
+    <!-- Responsive grid: 1 col on mobile, 2 cols on tablets/desktops -->
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div>
+          <img src="../img/managers/jbiden.jpg">
+          <div class="img-caption mt-3">
+            <h5 class="fw-bold>">
+              Joe Biden - American Chairman
+            </h5>
+            <p>
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col text-center">
+        <div>
+          <img src="../img/managers/">
+          <div class="img-caption mt-3">
+            <h5 class="fw-bold>">
+
+            </h5>
+            <p>
+              
+            </p>
+          </div>
+        </div>
+      </div>
 
 		  </div>
 		  </body>
