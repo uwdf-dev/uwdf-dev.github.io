@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Uncle Wong's</title>
+  <link rel="icon" href="../img/favicon-light.ico" type="image/x-icon">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    .img-caption {
+      text-align: center;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    img {
+
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (min-width: 768px) {
+      img {
+        max-width: 50%;
+      }
+    }
+
+    .product-image {
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    .thumbnail {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      cursor: pointer;
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
+    }
+
+    .thumbnail:hover,
+    .thumbnail.active {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NICE SEPARATE HEADER -->
+  <header class="y-4">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between">
+
+        <!-- Logo / Title on the left -->
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 ext-decoration-none">
+          <!-- Optional logo -->
+          <img src="../img/favicon-dark.ico" width="40" height="40" class="me-2">
+          <h3 class="mb-0 fw-bold">U.W.D.F.</h3>
+        </a>
+
+        <!-- Navigation on the right -->
+        <nav class="nav nav-masthead">
+          <a class="nav-link w-bold py-2 px-3" href="../">Home</a>
+          <a class="nav-link fw-bold py-2 px-3" aria-current="page" href="../product/">
+            <stock>Product</stock>
+          </a>
+          <a class="nav-link w-bold py-2 px-3" href="../about/">About</a>
+          <a class="nav-link w-bold py-2 px-3" href="../contact/">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Product Images -->
+      <div class="col-md-6 mb-4">
+        <img src="../img/product.jpg" alt="Product" class="img-fluid rounded mb-3 product-image" id="mainImage"></img>
+      </div>
+
+      <!-- Product Details -->
+      <div class="col-md-6">
+        <h2 class="mb-3">U.W.D.F SmartScreen©</h2>
+        <p class="text-muted mb-4">SKU: UWDF67XANTFA</p>
+        <div class="mb-3">
+          <span class="h4 me-2">$0.99</span>
+          <span class="text-muted"><s>$99.99</s></span>
+        </div>
+        <div class="mb-3">
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <i class="bi bi-star-fill text-warning"></i>
+          <span class="ms-2">5.0 (78,262,185 reviews)</span>
+        </div>
+        <p class="mb-4">Experience premium lighting quality and industry-leading window screens with the U.W.D.F.
+          SmartScreen©.
+          Perfect for anyone involved in cover-ups and wants to outsource their privacy protection.</p>
+        <div class="mb-4">
+          <h5>Color:</h5>
+          <div class="btn-group" role="group" aria-label="Color selection">
+            <input type="radio" class="btn-check" name="color" id="black" autocomplete="off" checked>
+            <label class="btn btn-outline-dark" for="black">Black</label>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label for="quantity" class="form-label">Quantity:</label>
+          <input type="number" class="form-control" id="quantity" value="1" min="1" style="width: 80px;">
+        </div>
+        <button class="btn btn-primary btn-lg mb-3 me-2">
+          <i class="bi bi-cart-plus"></i> Add to Cart
+        </button>
+        <button class="btn btn-outline-secondary btn-lg mb-3">
+          <i class="bi bi-heart"></i> Add to Wishlist
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function changeImage(event, src) {
+      document.getElementById('mainImage').src = src;
+      document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+
+</html>
