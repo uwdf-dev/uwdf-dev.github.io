@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Uncle Wong's</title>
+  <title>SmartGlass© – Buy Today!</title>
   <link rel="icon" href="../img/favicon-light.ico" type="image/x-icon">
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -62,25 +62,26 @@
 <body>
 
   <!-- NICE SEPARATE HEADER -->
-  <header class="y-4">
+  <header class="p-2">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between">
 
         <!-- Logo / Title on the left -->
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 ext-decoration-none">
           <!-- Optional logo -->
-          <img src="../img/favicon-dark.ico" width="40" height="40" class="me-2">
+          <img src="../img/favicon-dark.ico" width="48" height="48" class="me-2">
           <h3 class="mb-0 fw-bold">U.W.D.F.</h3>
         </a>
 
         <!-- Navigation on the right -->
         <nav class="nav nav-masthead">
-          <a class="nav-link w-bold py-2 px-3" href="../">Home</a>
-          <a class="nav-link fw-bold py-2 px-3" aria-current="page" href="../product/">
-            <stock>Product</stock>
+          <a class="nav-link py-2 px-3" href="../">Home</a>
+          <a class="nav-link fw-bold py-2 px-3" aria-current="page" href="#">
+            <strong>Product</strong>
           </a>
-          <a class="nav-link w-bold py-2 px-3" href="../about/">About</a>
-          <a class="nav-link w-bold py-2 px-3" href="../contact/">Contact</a>
+          <a class="nav-link py-2 px-3" href="../about/">About</a>
+          <a class="nav-link py-2 px-3" href="../contact/">Contact</a>
+          <a class="nav-link py-2 px-3" href="./disclaimer/">Disclaimer</a>
         </nav>
       </div>
     </div>
@@ -101,7 +102,7 @@
         <p class="text-muted mb-4">SKU: UWDF67XANTFA</p>
         <div class="mb-3">
           <span class="h4 me-2">$0.99</span>
-          <span class="text-muted"><s>$99.99</s></span>
+          <span class="text-muted"><s>$9,999.99</s></span>
         </div>
         <div class="mb-3">
           <i class="bi bi-star-fill text-warning"></i>
@@ -135,14 +136,6 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    function changeImage(event, src) {
-      document.getElementById('mainImage').src = src;
-      document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
-      event.target.classList.add('active');
-    }
-  </script>
 </body>
 
 </html>
